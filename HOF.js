@@ -25,7 +25,10 @@ for(i=0;i < arr.length; i++){
         newArray.push(arr[i]);
     }
 }
+return newArray;
 }
+
+filter(myNames);
 
 // DO NOT EDIT BETWEEN THESE LINES, BUT DO READ THE CODE ----->
 // First we setup an array of strings we plan to filter:
