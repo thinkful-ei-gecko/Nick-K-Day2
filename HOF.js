@@ -64,3 +64,14 @@ const hailWarning = hazardWarningCreator('Hail falling from the sky');
 hailWarning('Miami')
 hailWarning('london')
 hailWarning('Atlanta')
+
+
+let turtleSteps = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
+turtleSteps = turtleSteps.filter(steps => steps[0] >= 0 && steps[1] >= 0);
+
+let totalTurtleSteps = turtleSteps.map(steps => steps[0] + steps[1]);
+
+totalTurtleSteps.forEach(distance => {
+  console.log(distance);
+});
+
