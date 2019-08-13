@@ -75,3 +75,15 @@ totalTurtleSteps.forEach(distance => {
   console.log(distance);
 });
 
+const strangeWords = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest';
+    const arrayMaker = strangeWords.split(" ");
+    const reduced = arrayMaker.reduce((normalWords,word) =>{
+    if(word.length ===3){
+     return normalWords + ' ';
+    }
+    else {
+    return normalWords + word[word.length-1].toUpperCase();
+    }
+        
+    },'');
+    console.log(reduced)
